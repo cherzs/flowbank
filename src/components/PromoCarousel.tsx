@@ -33,7 +33,7 @@ export default function PromoCarousel() {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: dir >= 0 ? '-100%' : '100%', opacity: 0 }}
           transition={{ type: 'spring', stiffness: 260, damping: 30 }}
-          className="absolute inset-0 bg-[#0b1f2b] p-6"
+          className="absolute inset-0 bg-[#0b1f2b] px-16 py-6"
         >
           {slide.image && (
             <>
