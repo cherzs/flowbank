@@ -23,6 +23,29 @@ body {
   border: 1px solid rgba(45, 212, 191, 0.14);
 }
 
+.flow-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 185, 129, 0.75) #0b1120;
+}
+
+.flow-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.flow-scrollbar::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+
+.flow-scrollbar::-webkit-scrollbar-thumb {
+  background: #059669;
+  border: 2px solid #0b1120;
+  border-radius: 999px;
+}
+
+.flow-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;

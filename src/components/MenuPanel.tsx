@@ -82,7 +82,7 @@ export default function MenuPanel({
               </motion.button>
             </header>
 
-            <div className="flex-1 overflow-y-auto px-7 pb-10 pt-2">
+            <div className="flow-scrollbar flex-1 overflow-y-auto px-7 pb-10 pt-2">
               {active === 'Login' && <LoginForm initialTab={loginTab} />}
               {active === 'Promo' && <PromoContent />}
               {active === 'Produk' && <FeatureContent data={PRODUCTS} sectionId="produk" onNavigate={onClose} />}
@@ -253,9 +253,6 @@ function PromoContent() {
               </span>
             )}
             <div className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/25" />
-            <span className="absolute left-3 top-3 grid h-8 w-8 place-items-center rounded-full bg-flow-bg/60 text-xs font-bold text-flow-teal">
-              {p.brand[0]}
-            </span>
           </div>
           <h3 className="mt-3 text-lg font-semibold text-flow-ink group-hover:text-flow-teal">
             {p.title}
