@@ -13,14 +13,21 @@ export default function Hero() {
         Digital Banking
       </motion.p>
 
-      <motion.img
-        src={logoMark}
-        alt="FlowBank"
+      <motion.div
         initial={{ opacity: 0, y: 24, scale: 0.92 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ delay: 0.5, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="h-32 w-32 object-contain md:h-40 md:w-40"
-      />
+        className="flex items-center gap-4 md:gap-6"
+      >
+        <img
+          src={logoMark}
+          alt="FlowBank"
+          className="h-28 w-28 object-contain md:h-36 md:w-36"
+        />
+        <span className="text-5xl font-bold tracking-tight text-white md:text-7xl">
+          Bank
+        </span>
+      </motion.div>
 
       <motion.div
         initial={{ scaleX: 0 }}
