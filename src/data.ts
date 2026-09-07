@@ -65,12 +65,14 @@ export const SLIDES: Slide[] = [
     title: 'KPR Bunga 2,26%',
     period: 'Berlaku s/d Des 2026',
     url: 'kpr.flowbank.co.id',
+    image: homeImage,
   },
   {
     id: 'travel',
     title: 'Travel Fair Cashback',
     period: '01 Sep - 30 Sep',
     url: 'travel.flowbank.co.id',
+    image: creditCardImage,
   },
 ]
 

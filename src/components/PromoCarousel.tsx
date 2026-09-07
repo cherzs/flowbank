@@ -70,15 +70,15 @@ export default function PromoCarousel() {
       </AnimatePresence>
 
       {/* Controls */}
-      <div className="absolute inset-y-0 left-0 flex items-center pl-3">
+      <div className="absolute inset-y-0 left-0 z-20 flex items-center pl-3">
         <Arrow dir={-1} onClick={() => go(-1)} />
       </div>
-      <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+      <div className="absolute inset-y-0 right-0 z-20 flex items-center pr-3">
         <Arrow dir={1} onClick={() => go(1)} />
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2">
         {SLIDES.map((s, i) => (
           <button
             key={s.id}
@@ -103,6 +103,7 @@ export default function PromoCarousel() {
 function Arrow({ dir, onClick }: { dir: number; onClick: () => void }) {
   return (
     <motion.button
+      type="button"
       aria-label={dir < 0 ? 'Sebelumnya' : 'Berikutnya'}
       whileHover={{ scale: 1.15 }}
       whileTap={{ scale: 0.9 }}
