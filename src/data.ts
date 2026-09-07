@@ -19,7 +19,6 @@ import {
   ShieldCheck,
   type LucideIcon,
 } from 'lucide-react'
-import expoImage from './img/promo-flowbank-expo.png'
 import savingsImage from './img/product-savings.png'
 import creditCardImage from './img/product-credit-card.png'
 import homeImage from './img/product-home.png'
@@ -58,7 +57,7 @@ export const SLIDES: Slide[] = [
     title: 'FlowBank Expo 2026',
     period: '21 Agt - 31 Okt',
     url: 'expo.flowbank.co.id',
-    image: expoImage,
+    image: savingsImage,
   },
   {
     id: 'kpr',
